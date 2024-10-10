@@ -10,10 +10,6 @@
 	import PageButtonContainer from "$lib/components/PageButtonContainer.svelte";
 	import type { ICareerBuild } from "$lib/entities/builds/CareerBuild";
 
-	let { data } = $props();
-
-	console.log(data.stats);
-
 	let buildsPageState = getBuildsPageState();
 
 	if ($page.url.search) {
